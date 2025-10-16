@@ -1,0 +1,2223 @@
+{
+  "services": [
+    {
+      "path": "/",
+      "name": "",
+      "enabled": false,
+      "response": {
+        "message": "Welcome to zzzAPI",
+        "success": true
+      },
+      "types": [
+        "get"
+      ],
+      "summary": "Health Check",
+      "description": "The root api endpoint that returns a welcome message if the API is running."
+    },
+    {
+      "path": "/devices",
+      "name": "DEVICES_API",
+      "protectedRoute": true,
+      "appendAccount": true,
+      "enabled": true,
+      "response": {
+        "message": "Hello, I'm a mock response."
+      },
+      "types": [
+        "post"
+      ]
+    },
+    {
+      "path": "/devices",
+      "name": "FUSE_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "units": [
+          {
+            "wakeupTimes": [
+              "00:00",
+              null,
+              null,
+              null
+            ],
+            "pendingWakeupTimes": null,
+            "_id": "8946203804400013586",
+            "__v": 0,
+            "apn": "m2m.tele2.com",
+            "battery": 23,
+            "fwVersion": "Beta 1.2 190220",
+            "model": "bloodhound issD",
+            "operatingMode": "Normal",
+            "pendingOperatingMode": null,
+            "pendingTamperState": null,
+            "pendingWakeupDays": null,
+            "productionDate": "2020-02-20T00:00:00.000Z",
+            "radioStatus": "6,1,G,5,48,48,60,_,0,R,3",
+            "serverAddress": "bloodhound.intelizzz.co.uk:6001",
+            "tamperState": "Tamper",
+            "wakeupDays": "MTWTFSS",
+            "gnssstatus": "V,0,0,99.99,123,0",
+            "accountId": "5dc95bdccfe872001144090b",
+            "name": "Container Device",
+            "groupId": "5e301d098e25ab0012c88549"
+          },
+          {
+            "wakeupTimes": [
+              "00:00",
+              "13:00",
+              null,
+              null
+            ],
+            "pendingWakeupTimes": null,
+            "_id": "8946203804400013583",
+            "__v": 0,
+            "apn": "m2m.tele2.com",
+            "battery": 100,
+            "fwVersion": "RC1.0 201219",
+            "model": "bloodhound issB",
+            "operatingMode": "Normal",
+            "pendingOperatingMode": null,
+            "pendingTamperState": null,
+            "pendingWakeupDays": null,
+            "productionDate": "2019-12-23T00:00:00.000Z",
+            "radioStatus": "20,99,G,5,7,8,13,_,0,R,0",
+            "serverAddress": "bloodhound.intelizzz.co.uk:6001",
+            "tamperState": "Tamper",
+            "wakeupDays": "MTWTFSS",
+            "gnssstatus": "A,1,8,1.67,9,2",
+            "accountId": "5dc95bdccfe872001144090b",
+            "name": "Yacht",
+            "groupId": "5e301d098e25ab0012c88549"
+          },
+          {
+            "wakeupTimes": [
+              "00:00",
+              "06:00",
+              "11:00",
+              "19:00"
+            ],
+            "pendingWakeupTimes": null,
+            "_id": "8946203804400013588",
+            "__v": 0,
+            "apn": "m2m.tele2.com",
+            "battery": 100,
+            "fwVersion": "RC1.0 201219",
+            "model": "bloodhound issB",
+            "operatingMode": "Normal",
+            "pendingOperatingMode": null,
+            "pendingTamperState": null,
+            "pendingWakeupDays": null,
+            "productionDate": "2019-12-23T00:00:00.000Z",
+            "radioStatus": "12,99,G,5,8,9,16,_,0,R,0",
+            "serverAddress": "bloodhound.intelizzz.co.uk:6001",
+            "tamperState": "On",
+            "wakeupDays": "MTWTFSS",
+            "accountId": "5dc95bdccfe872001144090b",
+            "name": "Minibus",
+            "groupId": "5e301d098e25ab0012c88549",
+            "gnssstatus": "A,1,6,1.97,3,1"
+          },
+          {
+            "wakeupTimes": [
+              "00:00",
+              "10:00",
+              "18:30",
+              null
+            ],
+            "pendingWakeupTimes": null,
+            "_id": "8946203804400013581",
+            "__v": 0,
+            "apn": "m2m.tele2.com",
+            "battery": 100,
+            "fwVersion": "RC1.0 201219",
+            "model": "bloodhound issB",
+            "operatingMode": "Normal",
+            "pendingOperatingMode": null,
+            "pendingWakeupDays": null,
+            "productionDate": "2019-12-23T00:00:00.000Z",
+            "radioStatus": "11,99,G,5,10,11,17,_,0,R,1",
+            "serverAddress": "bloodhound.intelizzz.co.uk:6001",
+            "wakeupDays": "MTWTFSS",
+            "pendingTamperState": null,
+            "tamperState": "On",
+            "accountId": "5dc95bdccfe872001144090b",
+            "name": "Tank 1",
+            "groupId": "5e301d098e25ab0012c88549",
+            "gnssstatus": "A,1,8,1.10,18,6"
+          },
+          {
+            "wakeupTimes": [
+              "00:00",
+              null,
+              null,
+              null
+            ],
+            "pendingWakeupTimes": null,
+            "_id": "8946203804400013589",
+            "__v": 0,
+            "apn": "m2m.tele2.com",
+            "battery": 100,
+            "fwVersion": "RC1.0 201219",
+            "model": "bloodhound issB",
+            "operatingMode": "Normal",
+            "pendingOperatingMode": null,
+            "pendingTamperState": null,
+            "pendingWakeupDays": null,
+            "productionDate": "2019-12-23T00:00:00.000Z",
+            "radioStatus": "15,99,G,5,9,10,25,_,0,RT,0",
+            "serverAddress": "bloodhound.intelizzz.co.uk:6001",
+            "tamperState": "Tamper",
+            "wakeupDays": "MTWTFSS",
+            "accountId": "5dc95bdccfe872001144090b",
+            "name": "BFG",
+            "groupId": "5e301d098e25ab0012c88549",
+            "gnssstatus": "V,0,0,99.99,123,0"
+          }
+        ],
+        "status": "success"
+      },
+      "types": [
+        "get"
+      ],
+      "summary": "Get Devices",
+      "description": "Returns all devices that belong to an account if a parent user. Only returns the devices related to groups a child user has been added to if a child user."
+    },
+    {
+      "path": "/devices/assign",
+      "name": "DEVICES_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "message": "Hello, I'm a mock response."
+      },
+      "types": [
+        "put"
+      ]
+    },
+    {
+      "path": "/devices/activate",
+      "name": "DEVICES_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "result": {
+          "_id": "8946203804400013558",
+          "activatedDate": null
+        },
+        "status": "success"
+      },
+      "types": [
+        "put"
+      ],
+      "summary": "Activate Device",
+      "description": "Sets or clears the activation date of a device which is used for UI purposes on the front-end."
+    },
+    {
+      "path": "/devices/update",
+      "name": "DEVICES_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "message": "Hello, I'm a mock response."
+      },
+      "types": [
+        "put"
+      ]
+    },
+    {
+      "path": "/devices/tamper",
+      "name": "DEVICES_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "message": "Hello, I'm a mock response."
+      },
+      "types": [
+        "put"
+      ],
+      "summary": "Set Tamper State",
+      "description": "Sets the tamper state of one or more devices."
+    },
+    {
+      "path": "/devices/operatingmode",
+      "name": "DEVICES_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "message": "Hello, I'm a mock response."
+      },
+      "types": [
+        "put"
+      ]
+    },
+    {
+      "path": "/devices/group",
+      "name": "FUSE_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "message": "Hello, I'm a mock response."
+      },
+      "types": [
+        "put"
+      ]
+    },
+    {
+      "path": "/devices/wakeuptimes",
+      "name": "DEVICES_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "message": "Hello, I'm a mock response."
+      },
+      "types": [
+        "put"
+      ]
+    },
+    {
+      "path": "/devices/recoverycode",
+      "name": "DEVICES_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "message": "Hello, I'm a mock response."
+      },
+      "types": [
+        "put"
+      ],
+      "summary": "Creates asset recovery code for the Thatcham process",
+      "description": "Create a 4 digit code the user can use to contact the call centre."
+    },
+    {
+      "path": "/devices/clearrecoverycode",
+      "name": "DEVICES_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "message": "Hello, I'm a mock response."
+      },
+      "types": [
+        "put"
+      ],
+      "summary": "Clears the asset recovery code for the Thatcham process",
+      "description": "Clears a previously generated 4 digit code used by the user to contact the call centre."
+    },
+    {
+      "path": "/devices/certificates",
+      "name": "DEVICES_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+      },
+      "types": [
+        "get"
+      ]
+    },
+    {
+      "path": "/devices/addcertificate",
+      "name": "DEVICES_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+      },
+      "types": [
+        "post"
+      ]
+    },
+    {
+      "path": "/devices/certificate/:deviceId",
+      "name": "DEVICES_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+      },
+      "types": [
+        "get"
+      ]
+    },
+    {
+      "path": "/user/child",
+      "name": "USERS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "message": "Hello, I'm a mock response."
+      },
+      "types": [
+        "post",
+        "delete"
+      ]
+    },
+    {
+      "path": "/user/update",
+      "name": "USERS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "message": "Hello, I'm a mock response."
+      },
+      "types": [
+        "put"
+      ]
+    },
+    {
+      "path": "/user",
+      "name": "USERS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "_id": "5dc95bddcfe872001144090c",
+        "username": "anthony@intelizzz.co.uk",
+        "accountId": "5dc95bdccfe872001144090b",
+        "firstName": "Anthony",
+        "lastName": "Williams",
+        "roles": [
+          "app_user"
+        ],
+        "address1": "Suite 36 Hardmans Business Centre",
+        "address2": "New Hall Hey Road",
+        "address3": "Rossendale",
+        "address4": "Lancashire",
+        "postcode": "BB4 6HH",
+        "country": "England",
+        "email": "anthony@intelizzz.co.uk",
+        "contactNumber": "+44 161 711 0053",
+        "alertsNumber": "+44 7919 400 401",
+        "parentId": null,
+        "isParent": true,
+        "companyName": "Intelizzz",
+        "status": "success"
+      },
+      "types": [
+        "get"
+      ],
+      "summary": "Get User",
+      "description": "Gets the details of the currently logged in user."
+    },
+    {
+      "path": "/user/token/:token",
+      "name": "USERS_API",
+      "protectedRoute": false,
+      "appendAccount": false,
+      "appendJWT": false,
+      "enabled": true,
+      "response": {
+      },
+      "types": [
+        "get"
+      ]
+    },
+    {
+      "path": "/user/children",
+      "name": "USERS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "children": [
+          {
+            "_id": "5dcb224857a5d1001115b38b",
+            "username": "aziz@intelizzz.co.uk",
+            "firstName": "Aziz",
+            "lastName": "Tarafder",
+            "email": "aziz@intelizzz.co.uk"
+          },
+          {
+            "_id": "5dcc77b070dce500129d514c",
+            "username": "nick@intelizzz.co.uk",
+            "firstName": "Nick",
+            "lastName": "Hopkinson",
+            "email": "nick@intelizzz.co.uk",
+            "address1": "Intelizzz Street",
+            "address2": "",
+            "address3": "Las Vegas",
+            "address4": "",
+            "contactNumber": "",
+            "country": "USA",
+            "postcode": ""
+          },
+          {
+            "_id": "5dd29236c2019400114555ea",
+            "username": "peter.parker@dailybugle.com",
+            "firstName": "Peter",
+            "lastName": "Parker",
+            "email": "peter.parker@dailybugle.com"
+          },
+          {
+            "_id": "5dd67e4ac2019400114555f1",
+            "username": "tony@intelizzz.co.uk",
+            "firstName": "Tony",
+            "lastName": "Davies",
+            "email": "tony@intelizzz.co.uk"
+          },
+          {
+            "_id": "5e00ae92ef0e43003f372110",
+            "username": "kathryn@intelizzz.co.uk",
+            "firstName": "",
+            "lastName": "",
+            "email": "kathryn@intelizzz.co.uk"
+          }
+        ],
+        "status": "success"
+      },
+      "types": [
+        "get"
+      ],
+      "summary": "Get Child Accounts",
+      "description": "Gets all child users of a parent user/account."
+    },
+    {
+      "path": "/user/requestreset",
+      "name": "USERS_API",
+      "protectedRoute": false,
+      "appendAccount": false,
+      "appendJWT": false,
+      "enabled": true,
+      "response": {
+      },
+      "types": [
+        "put"
+      ]
+    },
+    {
+      "path": "/user/requesttoken",
+      "name": "USERS_API",
+      "protectedRoute": false,
+      "appendAccount": false,
+      "appendJWT": false,
+      "enabled": true,
+      "response": {
+      },
+      "types": [
+        "put"
+      ],
+      "summary": "Requests the reset password token",
+      "description": "Requests the reset password token when a valid 4-digit code is provided. The endpoint provides three opportunities to get it right."
+    },
+    {
+      "path": "/user/resettoken/:token",
+      "name": "USERS_API",
+      "protectedRoute": false,
+      "appendAccount": false,
+      "appendJWT": false,
+      "enabled": true,
+      "response": {
+      },
+      "types": [
+        "get"
+      ]
+    },
+    {
+      "path": "/report/list",
+      "name": "REPORTS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+      },
+      "types": [
+        "get"
+      ]
+    },
+    {
+      "path": "/report/request",
+      "name": "REPORTS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+      },
+      "types": [
+        "post"
+      ]
+    },
+    {
+      "path": "/report/download/:reportId",
+      "name": "REPORTS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": false,
+      "enabled": true,
+      "response": {
+      },
+      "types": [
+        "get"
+      ]
+    },
+    {
+      "path": "/report",
+      "name": "REPORTS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "reportIds": [],
+        "status": "success"
+      },
+      "responseType": {
+        "success": {
+          "statusCode": 200,
+          "type": "Object",
+          "response": {
+            "reportIds": "Array"
+          }
+        }
+      },
+      "types": [
+        "delete"
+      ],
+      "summary": "Remove Reports",
+      "description": "Removes one or more reports."
+    },
+    {
+      "path": "/geofences",
+      "name": "GEOFENCE_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "geofences": [
+          {
+            "_id": "5e4a9144bda5730014774c18",
+            "type": "circle",
+            "name": "",
+            "inside": false,
+            "detail": {
+              "center": {
+                "latitude": 40.767867506201476,
+                "longitude": -73.96270792756138
+              },
+              "radius": 544.9856427642185
+            }
+          },
+          {
+            "_id": "5e4b27803accf6003e85485a",
+            "type": "rectangle",
+            "name": "",
+            "inside": true,
+            "detail": {
+              "path": [
+                {
+                  "latitude": 53.39525178811128,
+                  "longitude": -2.1861593784030275
+                },
+                {
+                  "latitude": 53.39525178811128,
+                  "longitude": -2.1813099445041018
+                },
+                {
+                  "latitude": 53.392654318687704,
+                  "longitude": -2.1813099445041018
+                },
+                {
+                  "latitude": 53.392654318687704,
+                  "longitude": -2.1861593784030275
+                }
+              ]
+            }
+          },
+          {
+            "_id": "5e4b2de0eee58b001105e0bd",
+            "type": "circle",
+            "name": "",
+            "inside": true,
+            "detail": {
+              "center": {
+                "latitude": 40.76523091456335,
+                "longitude": -73.97935066723072
+              },
+              "radius": 698.6674827098271
+            }
+          },
+          {
+            "_id": "5e4e5a97eee58b001105e0c5",
+            "type": "rectangle",
+            "name": "",
+            "inside": true,
+            "detail": {
+              "path": [
+                {
+                  "latitude": 34.061626710431405,
+                  "longitude": -120.57778723313359
+                },
+                {
+                  "latitude": 34.061626710431405,
+                  "longitude": -118.99575598313359
+                },
+                {
+                  "latitude": 33.109812153390266,
+                  "longitude": -118.99575598313359
+                },
+                {
+                  "latitude": 33.109812153390266,
+                  "longitude": -120.57778723313359
+                }
+              ]
+            }
+          },
+          {
+            "_id": "5e4e5a97eee58b001105e0c6",
+            "type": "polygon",
+            "name": "",
+            "inside": true,
+            "detail": {
+              "path": [
+                {
+                  "latitude": 34.37051,
+                  "longitude": -118.397
+                },
+                {
+                  "latitude": 34.1435,
+                  "longitude": -117.996
+                },
+                {
+                  "latitude": 34.01611,
+                  "longitude": -117.68838
+                },
+                {
+                  "latitude": 33.77445,
+                  "longitude": -117.68838
+                },
+                {
+                  "latitude": 33.55042,
+                  "longitude": -117.94107
+                },
+                {
+                  "latitude": 33.70593,
+                  "longitude": -118.35306
+                },
+                {
+                  "latitude": 33.8794,
+                  "longitude": -118.77603
+                },
+                {
+                  "latitude": 34.30701,
+                  "longitude": -118.73208
+                }
+              ]
+            }
+          },
+          {
+            "_id": "5e4e5a97eee58b001105e0c4",
+            "type": "circle",
+            "name": "",
+            "inside": true,
+            "detail": {
+              "center": {
+                "latitude": 33.73324285388935,
+                "longitude": -115.83708131708107
+              },
+              "radius": 55592.18275200993
+            }
+          },
+          {
+            "_id": "5e4e5ac4eee58b001105e0c9",
+            "type": "rectangle",
+            "name": "",
+            "inside": false,
+            "detail": {
+              "path": [
+                {
+                  "latitude": 53.52155154852429,
+                  "longitude": -2.6656704975585876
+                },
+                {
+                  "latitude": 53.52155154852429,
+                  "longitude": -2.3223477436523376
+                },
+                {
+                  "latitude": 53.3415516282483,
+                  "longitude": -2.3223477436523376
+                },
+                {
+                  "latitude": 53.3415516282483,
+                  "longitude": -2.6656704975585876
+                }
+              ]
+            }
+          },
+          {
+            "_id": "5e4e70daeee58b001105e0cb",
+            "type": "polygon",
+            "name": "",
+            "inside": true,
+            "detail": {
+              "path": [
+                {
+                  "latitude": 50.86289,
+                  "longitude": -0.08361
+                },
+                {
+                  "latitude": 50.86272,
+                  "longitude": -0.08593
+                },
+                {
+                  "latitude": 50.86184,
+                  "longitude": -0.08663
+                },
+                {
+                  "latitude": 50.86072,
+                  "longitude": -0.08663
+                },
+                {
+                  "latitude": 50.86008,
+                  "longitude": -0.0847
+                },
+                {
+                  "latitude": 50.86029,
+                  "longitude": -0.08176
+                },
+                {
+                  "latitude": 50.86126,
+                  "longitude": -0.08095
+                },
+                {
+                  "latitude": 50.86281,
+                  "longitude": -0.08243
+                }
+              ]
+            }
+          },
+          {
+            "_id": "5e4e759eeee58b001105e0cd",
+            "type": "circle",
+            "name": "",
+            "inside": true,
+            "detail": {
+              "center": {
+                "latitude": 50.86196471979278,
+                "longitude": -0.08613543686580384
+              },
+              "radius": 4927.154038603083
+            }
+          },
+          {
+            "_id": "5e4f030a92e3b70012ef1d89",
+            "type": "circle",
+            "name": "",
+            "inside": true,
+            "detail": {
+              "center": {
+                "latitude": 50.87950148768105,
+                "longitude": 0.09820855832073232
+              },
+              "radius": 917.2391898015125
+            }
+          },
+          {
+            "_id": "5e4f036092e3b70012ef1d8b",
+            "type": "polygon",
+            "name": "",
+            "inside": false,
+            "detail": {
+              "path": [
+                {
+                  "latitude": 51.07939,
+                  "longitude": -0.21795
+                },
+                {
+                  "latitude": 51.03105,
+                  "longitude": -0.20971
+                },
+                {
+                  "latitude": 50.9939,
+                  "longitude": -0.21108
+                },
+                {
+                  "latitude": 50.99995,
+                  "longitude": -0.3594
+                },
+                {
+                  "latitude": 50.96969,
+                  "longitude": -0.38137
+                },
+                {
+                  "latitude": 50.9304,
+                  "longitude": -0.42095
+                },
+                {
+                  "latitude": 50.88761,
+                  "longitude": -0.44954
+                },
+                {
+                  "latitude": 50.84318,
+                  "longitude": -0.47212
+                },
+                {
+                  "latitude": 50.81223,
+                  "longitude": -0.44739
+                },
+                {
+                  "latitude": 50.81483,
+                  "longitude": -0.36362
+                },
+                {
+                  "latitude": 50.86774,
+                  "longitude": -0.39383
+                },
+                {
+                  "latitude": 50.91971,
+                  "longitude": -0.38834
+                },
+                {
+                  "latitude": 50.95086,
+                  "longitude": -0.3444
+                },
+                {
+                  "latitude": 50.97335,
+                  "longitude": -0.31556
+                },
+                {
+                  "latitude": 50.97767,
+                  "longitude": -0.2057
+                },
+                {
+                  "latitude": 50.97421,
+                  "longitude": -0.15626
+                },
+                {
+                  "latitude": 51.08045,
+                  "longitude": -0.19196
+                }
+              ]
+            }
+          },
+          {
+            "_id": "5e4fb44392e3b70012ef1d8c",
+            "type": "polygon",
+            "name": "",
+            "inside": true,
+            "detail": {
+              "path": [
+                {
+                  "latitude": 50.87873,
+                  "longitude": -0.00424
+                },
+                {
+                  "latitude": 50.87827,
+                  "longitude": -0.00532
+                },
+                {
+                  "latitude": 50.87739,
+                  "longitude": -0.00557
+                },
+                {
+                  "latitude": 50.87723,
+                  "longitude": -0.00424
+                },
+                {
+                  "latitude": 50.8777,
+                  "longitude": -0.00229
+                },
+                {
+                  "latitude": 50.87829,
+                  "longitude": -0.00205
+                },
+                {
+                  "latitude": 50.87872,
+                  "longitude": -0.00328
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "types": [
+        "get",
+        "post",
+        "delete"
+      ],
+      "summary": "Get Account Geofences",
+      "description": "Gets all geofences related to an account."
+    },
+    {
+      "path": "/geofences/devices",
+      "name": "GEOFENCE_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+      },
+      "types": [
+        "put"
+      ]
+    },
+    {
+      "path": "/geofences/devices/:geofenceId",
+      "name": "FUSE_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+      },
+      "types": [
+        "get"
+      ]
+    },
+    {
+      "path": "/locations",
+      "name": "FUSE_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+      },
+      "types": [
+        "get"
+      ]
+    },
+    {
+      "path": "/lastlocations",
+      "name": "FUSE_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+      },
+      "types": [
+        "get"
+      ],
+      "summary": "Get The Last Location of Devices",
+      "description": "Gets all the last locations of devices for parent user/account or the groups of a child account."
+    },
+    {
+      "path": "/lastwakeups",
+      "name": "FUSE_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+      },
+      "types": [
+        "get"
+      ],
+      "summary": "Get The Last Wakeup of Devices",
+      "description": "Gets all the last wakeups of devices for parent user/account or the groups of a child account."
+    },
+    {
+      "path": "/alerts",
+      "name": "FUSE_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "alerts": [
+          {
+            "_id": "5e87aa394046f9001786fa5b",
+            "deviceId": "8946203804400013584",
+            "accountId": "5dc95bdccfe872001144090b",
+            "groupId": "5e41450a9b367300416187a0",
+            "type": "tamper",
+            "tamperState": "Tamper",
+            "dateTime": "2020-04-03T21:27:05.000Z",
+            "latitude": "53.39202816666667",
+            "longitude": "-2.142543",
+            "location": "26 Granby Rd, Stockport SK2 6ET, UK",
+            "__v": 0,
+            "deviceData": {
+              "wakeupTimes": [
+                "00:00",
+                "06:00",
+                "12:00",
+                "18:00"
+              ],
+              "pendingWakeupTimes": null,
+              "_id": "8946203804400013584",
+              "__v": 0,
+              "apn": "m2m.tele2.com",
+              "battery": 82,
+              "fwVersion": "beta 1.2 090320",
+              "model": "bloodhound issD",
+              "operatingMode": "Tracking",
+              "pendingOperatingMode": null,
+              "pendingTamperState": null,
+              "pendingWakeupDays": null,
+              "productionDate": "2020-03-06T00:00:00.000Z",
+              "radioStatus": "14,99,u,5,10,11,19,_,1,R,0,2,Y",
+              "serverAddress": "bloodhound.intelizzz.co.uk:6001",
+              "tamperState": "Tamper",
+              "wakeupDays": "MTWTFSS",
+              "gnssstatus": "A,1,12,0.79,13,0",
+              "accountId": "5dc95bdccfe872001144090b",
+              "name": "MEV - beta build",
+              "groupId": "5e41450a9b367300416187a0"
+            }
+          },
+          {
+            "_id": "5e8788384046f9001786fa56",
+            "deviceId": "8946203804400013588",
+            "accountId": "5dc95bdccfe872001144090b",
+            "type": "geofence",
+            "dateTime": "2020-04-03T19:02:01.000Z",
+            "latitude": "50.87779583333333",
+            "longitude": "-0.003997",
+            "detail": {
+              "geofenceName": "",
+              "inside": true
+            },
+            "location": "47 Fitzjohns Rd, Lewes BN7 1PR, UK",
+            "__v": 0,
+            "deviceData": {
+              "wakeupTimes": [
+                "00:00",
+                "06:00",
+                "11:00",
+                "19:00"
+              ],
+              "pendingWakeupTimes": null,
+              "_id": "8946203804400013588",
+              "__v": 0,
+              "apn": "m2m.tele2.com",
+              "battery": 100,
+              "fwVersion": "RC1.0 201219",
+              "model": "bloodhound issB",
+              "operatingMode": "Normal",
+              "pendingOperatingMode": null,
+              "pendingTamperState": null,
+              "pendingWakeupDays": null,
+              "productionDate": "2019-12-23T00:00:00.000Z",
+              "radioStatus": "12,99,G,5,8,9,16,_,0,R,0",
+              "serverAddress": "bloodhound.intelizzz.co.uk:6001",
+              "tamperState": "On",
+              "wakeupDays": "MTWTFSS",
+              "accountId": "5dc95bdccfe872001144090b",
+              "name": "Aziz",
+              "groupId": "5e301d098e25ab0012c88549",
+              "gnssstatus": "A,1,6,1.97,3,1"
+            }
+          },
+          {
+            "_id": "5e623b6ad5de350018c01900",
+            "deviceId": "8946203804400013597",
+            "accountId": "5dc95bdccfe872001144090b",
+            "groupId": "5e41450a9b367300416187a0",
+            "type": "battery",
+            "batteryLevel": "6",
+            "dateTime": "2020-03-06T12:00:25.000Z",
+            "location": null,
+            "__v": 0,
+            "deviceData": {
+              "wakeupTimes": [
+                "09:00",
+                "12:00",
+                "15:00",
+                "18:00"
+              ],
+              "pendingWakeupTimes": null,
+              "_id": "8946203804400013597",
+              "__v": 0,
+              "apn": "m2m.tele2.com",
+              "battery": 97,
+              "fwVersion": "beta 1.2 060320",
+              "model": "bloodhound issD",
+              "operatingMode": "Normal",
+              "productionDate": "2019-12-16T00:00:00.000Z",
+              "radioStatus": "15,99,u,5,11,12,17,_,0,R,0,2,N",
+              "serverAddress": "bloodhound.intelizzz.co.uk:6001",
+              "tamperState": "Tamper",
+              "accountId": "5dc95bdccfe872001144090b",
+              "name": "MEV Device 2",
+              "gnssstatus": "A,1,12,0.85,122,1",
+              "groupId": "5e41450a9b367300416187a0",
+              "pendingOperatingMode": null,
+              "pendingTamperState": null,
+              "pendingWakeupDays": null,
+              "wakeupDays": "MTWTFSS"
+            }
+          }
+        ],
+        "status": "success"
+      },
+      "types": [
+        "get"
+      ],
+      "summary": "Get User Alerts",
+      "description": "Gets all alerts of all groups a user belongs to if a child user, or all alerts related to an account if a parent user."
+    },
+    {
+      "path": "/devices/reset/",
+      "name": "FUSE_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+      },
+      "types": [
+        "put"
+      ],
+      "summary": "Get The Last Location of Devices",
+      "description": "Gets all the last locations of devices for parent user/account or the groups of a child account."
+    },
+    {
+      "path": "/alerts/action",
+      "name": "ALERTS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "ids": [
+          "5ef13c3e5158c0f80afa8756"
+        ],
+        "status": "success"
+      },
+      "types": [
+        "put"
+      ],
+      "summary": "Action Account Alerts",
+      "description": "Sets an alert(s) to actioned on an account."
+    },
+    {
+      "path": "/devices/count",
+      "name": "DEVICES_API",
+      "protectedRoute": true,
+      "appendAccount": true,
+      "enabled": true,
+      "response": {
+        "message": "Hello, I'm a mock response."
+      },
+      "types": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "path": "/user/agreetc",
+      "name": "USERS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "_id": "5ef9cb1033f324a60d675fd9",
+        "tcAgreed": true,
+        "status": "success"
+      },
+      "types": [
+        "put"
+      ],
+      "summary": "Agree Terms and Conditions",
+      "description": "Used to set the t&cs / privacy policy flag with a date for a new user, or where the flag has been reset."
+    },
+    {
+      "path": "/groups",
+      "name": "USERS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "groups": [
+          {
+            "_id": "5dcc250c50392900339a4548",
+            "name": "Rentals"
+          },
+          {
+            "_id": "5dcc782b70dce500129d514e",
+            "name": "Soft Group"
+          },
+          {
+            "_id": "5dd292c4c2019400114555ec",
+            "name": "Tampered"
+          },
+          {
+            "_id": "5dd67cf6c2019400114555f0",
+            "name": "Deliveries"
+          }
+        ],
+        "status": "success"
+      },
+      "types": [
+        "get"
+      ],
+      "summary": "Get User Groups",
+      "description": "Gets all groups a user belongs to if a child user, or all groups related to an account if a parent user."
+    },
+    {
+      "path": "/user/messages",
+      "name": "USERS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "messages": [
+          {
+            "_id": "5ef9cb1033f324a60d675fd9",
+            "userId": "5e66da5cfdaa24658b7e6016",
+            "accountId": "5da0e6361a5f6ddb507eac58",
+            "senderId": "5e66da5cfdaa24658b7e6016",
+            "message": "Hello, this is a test message.",
+            "date": "2020-06-29T11:05:52.641Z",
+            "__v": 0
+          }
+        ],
+        "status": "success"
+      },
+      "types": [
+        "get"
+      ],
+      "summary": "Get User Messages",
+      "description": "Gets a list of all messages a user has sent or received."
+    },
+    {
+      "path": "/user/messages",
+      "name": "USERS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "_id": "5ef9cb1033f324a60d675fd9",
+        "userId": "5e66da5cfdaa24658b7e6016",
+        "message": "Hello, this is a test message.",
+        "date": "2020-06-29T11:05:52.641Z",
+        "status": "success"
+      },
+      "types": [
+        "post"
+      ],
+      "summary": "Send User Message",
+      "description": "Sends a message from a user to another user (currently it just adds it to the database and sends an email to intelizzz support)."
+    },
+    {
+      "path": "/group",
+      "name": "USERS_API",
+      "protectedRoute": true,
+      "appendAccount": true,
+      "enabled": true,
+      "response": {
+        "message": "Hello, I'm a mock response."
+      },
+      "types": [
+        "post",
+        "put"
+      ]
+    },
+    {
+      "path": "/usergroup",
+      "name": "USERS_API",
+      "protectedRoute": true,
+      "appendAccount": true,
+      "appendJWT": false,
+      "enabled": true,
+      "response": {
+        "message": "Hello, I'm a mock response."
+      },
+      "types": [
+        "post"
+      ]
+    },
+    {
+      "path": "/usergroup/:userId",
+      "name": "USERS_API",
+      "protectedRoute": true,
+      "appendAccount": true,
+      "appendJWT": false,
+      "enabled": true,
+      "response": {
+        "message": "Hello, I'm a mock response."
+      },
+      "types": [
+        "get"
+      ]
+    },
+    {
+      "path": "/dashboard",
+      "name": "FUSE_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "units": 22,
+        "alerts": 6790,
+        "groups": 15,
+        "unreadNotifications": 143,
+        "status": "success"
+      },
+      "responseType": {
+        "success": {
+          "statusCode": 200,
+          "type": "Object",
+          "response": {
+            "units": "Number",
+            "alerts": "Number",
+            "groups": "Number",
+            "unreadNotifications": "Number"
+          }
+        }
+      },
+      "types": [
+        "get"
+      ],
+      "summary": "Get Dashboard",
+      "description": "Uses the Fuse service to obtain stats to display on the Dashboard, including units, groups, alerts and notifications count."
+    },
+    {
+      "path": "/group",
+      "name": "FUSE_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "groupIds": [],
+        "status": "success"
+      },
+      "responseType": {
+        "success": {
+          "statusCode": 200,
+          "type": "Object",
+          "response": {
+            "groupIds": "Array"
+          }
+        }
+      },
+      "types": [
+        "delete"
+      ],
+      "summary": "Remove Groups",
+      "description": "Uses the Fuse service to remove groups and associated user groups, as well as unset the device groups where the group has been deleted."
+    },
+    {
+      "path": "/live",
+      "name": "TRACKER_API",
+      "protectedRoute": true,
+      "appendAccount": true,
+      "appendJWT": false,
+      "enabled": true,
+      "response": {
+        "units": 12,
+        "groups": 2,
+        "tracking": 2,
+        "messages": 3
+      },
+      "types": [
+        "get"
+      ]
+    },
+    {
+      "path": "/live/notifications",
+      "name": "USERS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "units": 12,
+        "groups": 2,
+        "tracking": 2,
+        "messages": 3
+      },
+      "types": [
+        "get"
+      ]
+    },
+    {
+      "path": "/app/faqs",
+      "name": "USERS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": false,
+      "enabled": true,
+      "response": {
+        "faqs": [
+        ],
+        "status": "success"
+      },
+      "types": [
+        "get"
+      ],
+      "summary": "Retrieves the FAQS",
+      "description": "Retrieves the FAQS to be displayed in the web app."
+    },
+    {
+      "path": "/app/urls",
+      "name": "USERS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": false,
+      "enabled": true,
+      "response": {
+        "faqs": [
+        ],
+        "status": "success"
+      },
+      "types": [
+        "get"
+      ],
+      "summary": "Retrieves Urls",
+      "description": "Retrieves any Urls used by the app, such as terms and conditions."
+    },
+    {
+      "path": "/test",
+      "name": "TRACKER_API",
+      "protectedRoute": true,
+      "appendAccount": true,
+      "appendJWT": false,
+      "enabled": true,
+      "response": {
+        "units": 12,
+        "groups": 2,
+        "tracking": 2,
+        "messages": 3
+      },
+      "types": [
+        "get"
+      ]
+    },
+    {
+      "path": "/units",
+      "name": "FUSE_API",
+      "enabled": false,
+      "response": {
+        "units": [
+          {
+            "name": "WX197ZU",
+            "id": "12345678",
+            "signal": [
+              "gps",
+              "gps",
+              "lbs",
+              "lbs",
+              "gps",
+              "no_gsm",
+              "gps"
+            ],
+            "battery": 0.84
+          }
+        ]
+      },
+      "types": [
+        "get"
+      ]
+    },
+    {
+      "path": "/groups",
+      "name": "GROUPS_API",
+      "enabled": false,
+      "response": {
+        "groups": [
+          {
+            "name": "Amazon",
+            "units": 35,
+            "users": 3,
+            "gps": 25,
+            "lbs": 19,
+            "no_gsm": 8
+          }
+        ]
+      },
+      "types": [
+        "get"
+      ]
+    },
+    {
+      "path": "/unit",
+      "name": "FUSE_API",
+      "enabled": false,
+      "response": {
+        "id": "12345678",
+        "lastLocation": {
+          "lat": "0.5673",
+          "long": "34.5672"
+        },
+        "lastSignal": "gps",
+        "battery": 0.84,
+        "wakeUpTimes": [
+          "14:35",
+          "17:35",
+          "19:30",
+          "02:05"
+        ],
+        "timeZone": "GMT"
+      },
+      "types": [
+        "get"
+      ]
+    },
+    {
+      "path": "/notes",
+      "name": "NOTES_API",
+      "enabled": false,
+      "response": {
+        "id": "12345678",
+        "notes": [
+          "Some plain text with newlines.\n\nLike that."
+        ],
+        "images": [
+          "http://some.s3.location/or/something"
+        ]
+      },
+      "types": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "path": "/tracker",
+      "name": "TRACKER_API",
+      "enabled": false,
+      "response": {
+        "units": [
+          {
+            "group": "Amazon",
+            "name": "WX197ZU",
+            "id": "12345678",
+            "wakeUpTimes": [
+              "14:35",
+              "17:35",
+              "19:30",
+              "02:05"
+            ],
+            "liveEndTime": "15:32",
+            "battery": 0.56,
+            "timeZone": "GMT"
+          }
+        ]
+      },
+      "types": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "path": "/waketimes",
+      "name": "FUSE_API",
+      "enabled": false,
+      "response": {
+        "units": [
+          {
+            "group": "Amazon",
+            "name": "WX197ZU",
+            "id": "12345678",
+            "wakeUpTimes": [
+              "14:35",
+              "17:35",
+              "19:30",
+              "02:05"
+            ],
+            "liveEndTime": "15:32",
+            "battery": 0.56,
+            "timeZone": "GMT"
+          }
+        ]
+      },
+      "types": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "path": "/alerts",
+      "name": "ALERTS_API",
+      "enabled": false,
+      "response": {
+        "alerts": [
+          {
+            "group": "Amazon",
+            "unitsCnt": 36,
+            "units": [
+              "WX197ZU",
+              "WX198ZU",
+              "PW19RUV",
+              "LS45TRW"
+            ]
+          }
+        ]
+      },
+      "types": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "path": "/batteries",
+      "name": "FUSE_API",
+      "enabled": false,
+      "response": {
+        "batteries": [
+          {
+            "units": 342,
+            "tenpercent": 25,
+            "tenpercentMonth": 12
+          }
+        ]
+      },
+      "types": [
+        "get"
+      ]
+    },
+    {
+      "path": "/stolen",
+      "name": "STOLEN_API",
+      "enabled": true,
+      "response": {
+        "saved": [
+          {
+            "stolen": 45,
+            "retrieved": 45,
+            "totalValue": 876465
+          }
+        ]
+      },
+      "types": [
+        "get"
+      ]
+    },
+    {
+      "path": "/devices/installer/install",
+      "name": "DEVICES_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "request": {
+        "_id": "8946203804400013558",
+        "groupId": "12345678",
+        "vin": "vin1234",
+        "data": {
+          "year": 2015,
+          "make": "CHEVROLET",
+          "model": "EQUINOX",
+          "manufacturer": "GENERAL MOTORS",
+          "engine": "",
+          "trim": "",
+          "transmission": ""
+        }
+      },
+      "response": {
+        "result": {
+          "_id": "8946203804400013558",
+          "vin": "vin1234",
+          "groupId": "12345678",
+          "data": {
+            "year": 2015,
+            "make": "CHEVROLET",
+            "model": "EQUINOX",
+            "manufacturer": "GENERAL MOTORS",
+            "engine": "",
+            "trim": "",
+            "transmission": ""
+          }
+        },
+        "status": "success"
+      },
+      "types": [
+        "put"
+      ],
+      "summary": "Install a Device",
+      "description": "Used by an 'Installer' to install devices into vehicles, generally at a vehicle dealership."
+    },
+    {
+      "path": "/devices/installer/uninstall",
+      "name": "DEVICES_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "request": {
+        "_id": "8946203804400013558",
+        "groupId": "12345678",
+        "vin": "vin1234"
+      },
+      "response": {
+        "result": {
+          "_id": "8946203804400013558",
+          "vin": "vin1234",
+          "groupId": "12345678"
+        },
+        "status": "success"
+      },
+      "types": [
+        "put"
+      ],
+      "summary": "Remove a Device",
+      "description": "Used by an 'Installer' to uninstall devices from vehicles, generally at a vehicle dealership."
+    },
+    {
+      "path": "/devices/installer/image",
+      "name": "DEVICES_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "request": {
+
+      },
+      "response": {
+        "result": {
+
+          },
+        "status": "success"
+      },
+      "types": [
+        "put"
+      ],
+      "summary": "Add an Image",
+      "description": "Used by an 'Installer' to add images when installing an Intelizz unit into a vehicle."
+    },
+    {
+      "path": "/installer/dealers",
+      "name": "USERS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "result": [],
+        "status": "success"
+      },
+      "types": [
+        "get"
+      ],
+      "summary": "Get Dealers",
+      "description": "Used by an 'Installer' to get a list of dealers on the Installer Network."
+    },
+    {
+      "path": "/installer/sites",
+      "name": "USERS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "result": [],
+        "status": "success"
+      },
+      "types": [
+        "get"
+      ],
+      "summary": "Get Sites",
+      "description": "Used by an 'Installer' to get a list of sites for a dealer on the Installer Network."
+    },
+    {
+      "path": "/devices/installer/getvindata",
+      "name": "DEVICES_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "result": {},
+        "status": "success"
+      },
+      "types": [
+        "get"
+      ],
+      "summary": "Get VIN Data",
+      "description": "Used by an 'Installer' object US or UK vin data of a vehicle."
+    },
+    {
+      "path": "/devices/installer/getinstalldata",
+      "name": "DEVICES_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "result": {},
+        "status": "success"
+      },
+      "types": [
+        "get"
+      ],
+      "summary": "Get Installation Data from the installation QR code",
+      "description": "Used by an 'Installer' to query installation data from an installation QR code."
+    },
+    {
+      "path": "/installer/invite",
+      "name": "USERS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "request": {
+        "installerEmail": "installer@intelizzz.co.uk"
+      },
+      "response": {
+          "installerEmail": "installer@intelizzz.co.uk",
+          "status": "success"
+      },
+      "types": [
+        "post"
+      ],
+      "summary": "Invite an installer user",
+      "description": "Sends an invite from the desktop app to a potential installer's email address, asking them to register."
+    },
+    {
+      "path": "/installer/register",
+      "name": "USERS_API",
+      "protectedRoute": false,
+      "appendAccount": false,
+      "appendJWT": false,
+      "enabled": true,
+      "request": {
+        "firstName": "firstName",
+        "lastName": "lastName",
+        "email": "email",
+        "dob": "dob",
+        "address1": "address1",
+        "address2": "address2",
+        "address3": "address3",
+        "address4": "address4",
+        "postcode": "postcode",
+        "country": "country",
+        "webId": "webId"
+      },
+      "response": {
+          "status": "success"
+      },
+      "types": [
+        "post"
+      ],
+      "summary": "Submits a registration and approval request",
+      "description": "Registers an installer user in pending approval status ready to be approved by a desktop user."
+    },
+    {
+      "path": "/installer/approve",
+      "name": "USERS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "request": {
+        "installerId": "123456"
+      },
+      "response": {
+        "installerId": "123456",
+        "userStatus": "approved",
+        "status": "success"
+      },
+      "types": [
+        "put"
+      ],
+      "summary": "Approves an installer user's registration request",
+      "description": "Approves an installer user's registration request."
+    },
+    {
+      "path": "/installer/branch",
+      "name": "USERS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "request": {
+        "groupId": "123456",
+        "country": "United Kingdom"
+      },
+      "response": {
+        "_id": "123456",
+        "name": "Group Name",
+        "type": 2,
+        "status": "success"
+      },
+      "types": [
+        "put"
+      ],
+      "summary": "Sets a group as a Branch on the installer network",
+      "description": "Sets a group as a Branch on the installer network."
+    },
+    {
+      "path": "/installer/site",
+      "name": "USERS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "request": {
+        "groupId": "123456",
+        "country": "United Kingdom"
+      },
+      "response": {
+        "_id": "123456",
+        "name": "Group Name",
+        "type": 3,
+        "status": "success"
+      },
+      "types": [
+        "put"
+      ],
+      "summary": "Sets a group as a Site on the installer network",
+      "description": "Sets a group as a Site on the installer network."
+    },
+    {
+      "path": "/installer/network/remove",
+      "name": "USERS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "groupId": "123456",
+        "status": "success"
+      },
+      "types": [
+        "get"
+      ],
+      "summary": "Removes a Branch/Site from the installer network",
+      "description": "Removes a Branch/Site from the installer network."
+    },
+    {
+      "path": "/site/category",
+      "name": "USERS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "request": {
+        "groupId": "123456",
+        "categoryName": "Cat Name"
+      },
+      "response": {
+        "_id": "123456",
+        "name": "Group Name",
+        "categories": ["Cat Name", "Other Category"],
+        "status": "success"
+      },
+      "types": [
+        "put"
+      ],
+      "summary": "Adds a category to a Site on the installer network",
+      "description": "Adds a category to a Site on the installer network."
+    },
+    {
+      "path": "/site/category",
+      "name": "USERS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "request": {
+        "groupId": "123456",
+        "categoryName": "Cat Name"
+      },
+      "response": {
+        "_id": "123456",
+        "name": "Group Name",
+        "categories": ["Other Category"],
+        "status": "success"
+      },
+      "types": [
+        "delete"
+      ],
+      "summary": "Removes a category from a Site on the installer network",
+      "description": "Removes a category from a Site on the installer network."
+    },
+    {
+      "path": "/site/category/update",
+      "name": "USERS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "request": {
+        "groupId": "123456",
+        "oldCategoryName": "Cat Name",
+        "newCategoryName": "Cat Name 2"
+      },
+      "response": {
+        "_id": "123456",
+        "name": "Group Name",
+        "categories": ["Cat Name 2", "Other Category"],
+        "status": "success"
+      },
+      "types": [
+        "put"
+      ],
+      "summary": "Updates a category to a Site on the installer network",
+      "description": "Updates a category to a Site on the installer network."
+    },
+    {
+      "path": "/devices/installationhistory",
+      "name": "FUSE_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "result": {
+          "deviceId": "123456",
+          "history": []
+        },
+        "status": "success"
+      },
+      "types": [
+        "get"
+      ],
+      "summary": "Gets the installation history for a device",
+      "description": "Gets the installation history for a device."
+    },
+    {
+      "path": "/devices/notes",
+      "name": "FUSE_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "result": {
+          "deviceId": "123456",
+          "notes": []
+        },
+        "status": "success"
+      },
+      "types": [
+        "get"
+      ],
+      "summary": "Gets the device notes for a device",
+      "description": "Gets the device notes for a device."
+    },
+    {
+      "path": "/installer/webid",
+      "name": "USERS_API",
+      "protectedRoute": false,
+      "appendAccount": false,
+      "appendJWT": false,
+      "enabled": true,
+      "response": {
+
+      },
+      "types": [
+        "get"
+      ],
+      "summary": "Accept installer invite",
+      "description": "Accept installer invite"
+    },
+    {
+      "path": "/roles",
+      "name": "USERS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "result": {
+          "roles": [
+            {
+              "permissions": [
+                "menu.users.can_use"
+              ],
+              "_id": "638d2295e2e9c656430d8073",
+              "name": "local_admin"
+            }
+          ]
+        },
+        "status": "success"
+      },
+      "types": [
+        "get"
+      ],
+      "summary": "Gets account roles",
+      "description": "Gets all of the roles related to an account."
+    },
+    {
+      "path": "/role",
+      "name": "USERS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "result": {
+          "name": "local_admin",
+          "permissions": [
+            "menu.users.can_use"
+          ],
+          "_id": "638d2295e2e9c656430d8073"
+        },
+        "status": "success"
+      },
+      "types": [
+        "post"
+      ],
+      "summary": "Creates a role",
+      "description": "Creates a role with permissions and a name."
+    },
+    {
+      "path": "/role/update",
+      "name": "USERS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "result": {
+          "name": "local_admin",
+          "permissions": [
+            "menu.users.can_use"
+          ],
+          "_id": "638d2295e2e9c656430d8073"
+        },
+        "status": "success"
+      },
+      "types": [
+        "put"
+      ],
+      "summary": "Updates a role",
+      "description": "Updates a role permissions and/or name."
+    },
+    {
+      "path": "/role",
+      "name": "USERS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "status": "success"
+      },
+      "types": [
+        "delete"
+      ],
+      "summary": "Removes a role",
+      "description": "Removes a role from the account."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "services": [
+    {
+      "path": "/",
+      "name": "",
+      "enabled": false,
+      "response": {
+        "message": "Welcome to zzzAPI",
+        "success": true
+      },
+      "types": ["get"]
+    },
+    {
+      "path": "/notify/:deviceId",
+      "name": "DISPERSE_API",
+      "externalAPI": true,
+      "appendAccount": false,
+      "enabled": true,
+      "response": { "message":  "Hello, I'm a mock response." },
+      "types": ["get"],
+      "summary": "Bloodhound callback endpoint",
+      "description": "Used by the bloodhound server to notify the ZZZAPI backend whenever a device wakes up. This kicks off data fetching from bloodhound by inner processes that then populate the databases of each of the relevant services."
+    }
+  ]
+}

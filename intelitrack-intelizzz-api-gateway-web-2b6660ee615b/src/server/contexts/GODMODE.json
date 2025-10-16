@@ -1,0 +1,14 @@
+{
+  "services": [
+    {
+      "path": "/",
+      "name": "",
+      "enabled": false,
+      "response": {
+        "message": "Welcome to the GodMode API",
+        "success": true
+      },
+      "types": ["get"]
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection).
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+### QueryGNSS - Params: DeviceID / APIKey
+
+GET http://bloodhound.intelizzz.co.uk:3000/position/QueryGNSS?DeviceID=987654321&APIKey=9hrM7TeXQrqmvkxLA6FzsgbGTcQES6AT
+Accept: application/json
+
+### QueryLBS - Params: DeviceID / APIKey
+
+GET http://bloodhound.intelizzz.co.uk:3000/position/QueryLBS?DeviceID=987654321&APIKey=9hrM7TeXQrqmvkxLA6FzsgbGTcQES6AT
+Accept: application/json
+
+### Start Tracking Mode - Params: DeviceID / APIKey / TrackingTime (seconds: 1 .. 65535) / TrackingFrequency (seconds:  1 .. 65535)
+
+GET http://bloodhound.intelizzz.co.uk:3000/config/StartTrackingMode?DeviceID=987654321&APIKey=9hrM7TeXQrqmvkxLA6FzsgbGTcQES6AT&TrackingTime=3600&TrackingFrequency=60
+Accept: application/json
+
+### Stop Tracking Mode - Params: DeviceID / APIKey
+
+GET http://bloodhound.intelizzz.co.uk:3000/config/StopTrackingMode?DeviceID=987654321&APIKey=9hrM7TeXQrqmvkxLA6FzsgbGTcQES6AT
+Accept: application/json
+
+### Query Tracking Mode - Params: DeviceID / APIKey
+
+GET http://bloodhound.intelizzz.co.uk:3000/config/QueryTrackingMode?DeviceID=987654321&APIKey=9hrM7TeXQrqmvkxLA6FzsgbGTcQES6AT
+Accept: application/json
+
+### Set Wakeup Times - Params: DeviceID / APIKey / WakeupCount (1 .. 4) / WakeupTimeN (hh:mm) / WakeupDays (MTWTFSS .. X to select days not to wakeup on)
+
+GET http://bloodhound.intelizzz.co.uk:3000/config/SetWakeupTimes?DeviceID=987654321&APIKey=9hrM7TeXQrqmvkxLA6FzsgbGTcQES6AT&WakeupCount=2&WakeupTime1=15:00&WakeupTime2=21:00&WakeupDays=MTWTFXX
+Accept: application/json
+
+### Query Wakeup Times - Params: DeviceID / APIKey
+
+GET http://bloodhound.intelizzz.co.uk:3000/config/QueryWakeupTimes?DeviceID=987654321&APIKey=9hrM7TeXQrqmvkxLA6FzsgbGTcQES6AT
+Accept: application/json
+
+### Set GNSS Timeout - Params: DeviceID / APIKey / Timeout (seconds: 0 .. 65535)
+
+GET http://bloodhound.intelizzz.co.uk:3000/config/SetGNSSTimeout?DeviceID=987654321&APIKey=9hrM7TeXQrqmvkxLA6FzsgbGTcQES6AT&Timeout=60
+Accept: application/json
+
+### Query GNSS Timeout - Params: DeviceID / APIKey
+
+GET http://bloodhound.intelizzz.co.uk:3000/config/QueryGNSSTimeout?DeviceID=987654321&APIKey=9hrM7TeXQrqmvkxLA6FzsgbGTcQES6AT&Timeout=60
+Accept: application/json
+
+### Set Radio Timeout - Params: DeviceID / APIKey / Timeout (seconds: 0 .. 65535)
+
+GET http://bloodhound.intelizzz.co.uk:3000/config/SetRadioTimeout?DeviceID=987654321&APIKey=9hrM7TeXQrqmvkxLA6FzsgbGTcQES6AT&RadioTimeout=60
+Accept: application/json
+
+### Query Radio Timeout - Params: DeviceID / APIKey
+
+GET http://bloodhound.intelizzz.co.uk:3000/config/QueryRadioTimeout?DeviceID=987654321&APIKey=9hrM7TeXQrqmvkxLA6FzsgbGTcQES6AT
+Accept: application/json
+
+### Set Message Timeout - Params: DeviceID / APIKey / Timeout (seconds: 0 .. 65535)
+
+GET http://bloodhound.intelizzz.co.uk:3000/config/SetMessageTimeout?DeviceID=987654321&APIKey=9hrM7TeXQrqmvkxLA6FzsgbGTcQES6AT&MessageTimeout=60
+Accept: application/json
+
+### Query Message Timeout - Params: DeviceID / APIKey
+
+GET http://bloodhound.intelizzz.co.uk:3000/config/QueryMessageTimeout?DeviceID=987654321&APIKey=9hrM7TeXQrqmvkxLA6FzsgbGTcQES6AT
+Accept: application/json
+
+### Set Server Address - Params: DeviceID / APIKey / ServerAddress (host:port)
+
+GET http://bloodhound.intelizzz.co.uk:3000/config/SetServerAddress?DeviceID=987654321&APIKey=9hrM7TeXQrqmvkxLA6FzsgbGTcQES6AT&ServerAddress=127.0.0.1:6001
+Accept: application/json
+
+### Set Device APN - Params: DeviceID / APIKey / APN (url)
+
+GET http://bloodhound.intelizzz.co.uk:3000/config/SetDeviceAPN?DeviceID=987654321&APIKey=9hrM7TeXQrqmvkxLA6FzsgbGTcQES6AT&APN=m2m.tele2.co.uk
+Accept: application/json
+
+### Query Battery Level - Params: DeviceID / APIKey
+
+GET http://bloodhound.intelizzz.co.uk:3000/config/QueryBatteryLevel?DeviceID=159568159&APIKey=9hrM7TeXQrqmvkxLA6FzsgbGTcQES6AT
+Accept: application/json
+
+### Query Device Status - Params: DeviceID / APIKey
+
+GET http://bloodhound.intelizzz.co.uk:3000/config/QueryDeviceStatus?DeviceID=987654321&APIKey=9hrM7TeXQrqmvkxLA6FzsgbGTcQES6AT
+Accept: application/json
+
+### Set Tamper State - Params: DeviceID / APIKey / TamperState (Off / On)
+
+GET http://bloodhound.intelizzz.co.uk:3000/config/SetTamperState?DeviceID=987654321&APIKey=9hrM7TeXQrqmvkxLA6FzsgbGTcQES6AT&TamperState=On
+Accept: application/json
+
+### Query Tamper State - Params: DeviceID / APIKey
+
+GET http://bloodhound.intelizzz.co.uk:3000/config/QueryTamperState?DeviceID=987654321&APIKey=9hrM7TeXQrqmvkxLA6FzsgbGTcQES6AT
+Accept: application/json
+
+### Set Secure Mode - Params: DeviceID / APIKey / SecureMode (Off / On)
+
+GET http://bloodhound.intelizzz.co.uk:3000/config/SetSecureMode?DeviceID=987654321&APIKey=9hrM7TeXQrqmvkxLA6FzsgbGTcQES6AT&SecureMode=On
+Accept: application/json
+
+### Query Secure Mode - Params: DeviceID / APIKey
+
+GET http://bloodhound.intelizzz.co.uk:3000/config/QuerySecureMode?DeviceID=987654321&APIKey=9hrM7TeXQrqmvkxLA6FzsgbGTcQES6AT
+Accept: application/json
+
+### Query SIM Data - Params: DeviceID / APIKey
+
+GET http://bloodhound.intelizzz.co.uk:3000/config/QuerySIMData?DeviceID=987654321&APIKey=9hrM7TeXQrqmvkxLA6FzsgbGTcQES6AT
+Accept: application/json
+
+### Set Operating Mode - Params: DeviceID / APIKey / OperatingMode (Normal / Tracking / Test)
+
+GET http://bloodhound.intelizzz.co.uk:3000/config/SetOperatingMode?DeviceID=987654321&APIKey=9hrM7TeXQrqmvkxLA6FzsgbGTcQES6AT&OperatingMode=Normal
+Accept: application/json
+
+### Query Operating Mode - Params: DeviceID / APIKey
+
+GET http://bloodhound.intelizzz.co.uk:3000/config/QueryOperatingMode?DeviceID=987654321&APIKey=9hrM7TeXQrqmvkxLA6FzsgbGTcQES6AT
+Accept: application/json
+
+### Query Pending - Params: DeviceID / APIKey
+
+GET http://bloodhound.intelizzz.co.uk:3000/config/QueryPending?DeviceID=987654321&APIKey=9hrM7TeXQrqmvkxLA6FzsgbGTcQES6AT
+Accept: application/json
+
+###

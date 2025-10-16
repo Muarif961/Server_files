@@ -1,0 +1,126 @@
+{
+  "services": [
+    {
+      "path": "/",
+      "name": "",
+      "enabled": false,
+      "response": {
+        "message": "Welcome to the LOCATOR API",
+        "success": true
+      },
+      "types": ["get"]
+    },
+    {
+      "path": "/user",
+      "name": "USERS_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": true,
+      "enabled": true,
+      "response": {
+        "_id": "5dc95bddcfe872001144090c",
+        "username": "anthony@intelizzz.co.uk",
+        "accountId": "5dc95bdccfe872001144090b",
+        "firstName": "Anthony",
+        "lastName": "Williams",
+        "roles": [
+          "app_user"
+        ],
+        "address1": "Suite 36 Hardmans Business Centre",
+        "address2": "New Hall Hey Road",
+        "address3": "Rossendale",
+        "address4": "Lancashire",
+        "postcode": "BB4 6HH",
+        "country": "England",
+        "email": "anthony@intelizzz.co.uk",
+        "contactNumber": "+44 161 711 0053",
+        "alertsNumber": "+44 7919 400 401",
+        "parentId": null,
+        "isParent": true,
+        "companyName": "Intelizzz",
+        "status": "success"
+      },
+      "types": [
+        "get"
+      ],
+      "summary": "Get User",
+      "description": "Gets the details of the currently logged in user."
+    },
+    {
+      "path": "/locatorlocations",
+      "name": "FUSE_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": false,
+      "enabled": true,
+      "response": {
+      },
+      "types": [
+        "get"
+      ],
+      "summary": "Get The Last Location of Devices for the locator app",
+      "description": "Gets all the last locations of devices for parent user/account or the groups of a child account."
+    },
+    {
+      "path": "/user/verify",
+      "name": "FUSE_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": false,
+      "enabled": true,
+      "response": {
+      },
+      "types": [
+        "post"
+      ],
+      "summary": "Verify a user and code",
+      "description": "Verifies if a user and code exists in the database ready to be added to the locator bucket."
+    },
+    {
+      "path": "/devices/addlocator",
+      "name": "DEVICES_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": false,
+      "enabled": true,
+      "response": {
+      },
+      "types": [
+        "post"
+      ],
+      "summary": "Adds a verified device to the locator bucket",
+      "description": "Adds a verified device to the locator bucket."
+    },
+    {
+      "path": "/previouslocations",
+      "name": "FUSE_API",
+      "protectedRoute": true,
+      "appendAccount": false,
+      "appendJWT": false,
+      "enabled": true,
+      "response": {
+      },
+      "types": [
+        "get"
+      ],
+      "summary": "Get The Previous Locations of a Device",
+      "description": "Gets the previous locations of a device within a date range."
+    },
+    {
+      "path": "/devices/operatingmode",
+      "name": "DEVICES_API",
+      "protectedRoute": true,
+      "appendAccount": true,
+      "appendJWT": false,
+      "enabled": true,
+      "response": {
+        "message": "Hello, I'm a mock response."
+      },
+      "types": [
+        "put"
+      ],
+      "summary": "Set Device Operating Mode",
+      "description": "Sets the operating mode of a device (in Locator this is only being used to set a device to tracking / extend tracking by another hour)."
+    }
+  ]
+}

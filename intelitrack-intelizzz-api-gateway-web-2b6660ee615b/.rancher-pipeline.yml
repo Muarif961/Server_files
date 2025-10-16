@@ -1,0 +1,32 @@
+stages:
+- name: Build
+  steps:
+  - runScriptConfig:
+      image: node:12
+      shellScript: npm i
+- name: Publish
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: zzzapi-gateway-service:${CICD_EXECUTION_SEQUENCE}
+- name: Deploy
+  steps:
+  - applyYamlConfig:
+      path: ./deployment.yaml
+  - applyYamlConfig:
+      path: ./disperse-gateway-deployment.yaml
+  - applyYamlConfig:
+      path: ./locator-gateway-deployment.yaml
+  - applyYamlConfig:
+      path: ./godmode-gateway-deployment.yaml
+timeout: 60
+branch:
+  include:
+  - Development
+notification:
+  recipients:
+  - recipient: anthony@intelizzz.co.uk
+    notifier: c-jbvpz:n-bchr5
+  condition:
+  - Success
