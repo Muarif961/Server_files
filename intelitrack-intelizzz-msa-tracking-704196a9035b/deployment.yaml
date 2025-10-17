@@ -1,0 +1,36 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: zzzapi-tracking-service
+spec:
+  selector:
+    app: zzzapi-tracking
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: zzzapi-tracking-deployment
+  labels:
+    app: zzzapi-tracking
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: zzzapi-tracking
+  template:
+    metadata:
+      labels:
+        app: zzzapi-tracking
+    spec:
+      imagePullSecrets:
+        - name: pipeline-docker-registry
+      containers:
+        - name: zzzapi-tracking
+          image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
+          ports:
+            - containerPort: 80

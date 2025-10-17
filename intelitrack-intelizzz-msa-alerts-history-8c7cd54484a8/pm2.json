@@ -1,0 +1,43 @@
+{
+  "apps": [
+    {
+      "name": "intelizzz-api-alerts-history",
+      "script": "src/server/index.js",
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      },
+      "error_file": "./logs/out.log",
+      "out_file": "./logs/out.log",
+      "merge_logs": true
+    },
+    {
+      "name": "intelizzz-api-alert-history-worker",
+      "script": "src/workers/alert-consumer.js",
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      },
+      "error_file": "./logs/kafka-alert-worker-out.log",
+      "out_file": "./logs/kafka-alert-worker-out.log",
+      "merge_logs": true
+    },
+    {
+      "name": "intelizzz-api-alerter",
+      "script": "src/workers/alerter-consumer.js",
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      },
+      "error_file": "./logs/kafka-alerter-worker-out.log",
+      "out_file": "./logs/kafka-alerter-worker-out.log",
+      "merge_logs": true
+    }
+  ]
+}

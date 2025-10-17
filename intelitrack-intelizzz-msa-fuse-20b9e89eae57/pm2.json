@@ -1,0 +1,17 @@
+{
+  "apps": [
+    {
+      "name": "intelizzz-api-fuse",
+      "script": "src/server/index.js",
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      },
+      "error_file": "./logs/out.log",
+      "out_file": "./logs/out.log",
+      "merge_logs": true
+    }
+  ]
+}

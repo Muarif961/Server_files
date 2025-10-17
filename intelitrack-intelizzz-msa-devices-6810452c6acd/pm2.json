@@ -1,0 +1,28 @@
+{
+  "apps": [
+    {
+      "name": "intelizzz-api-devices",
+      "script": "src/server/index.js",
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      },
+      "error_file": "./logs/out.log",
+      "merge_logs": true
+    },
+    {
+      "name": "intelizzz-api-devices-worker",
+      "script": "src/workers/device-consumer.js",
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      },
+      "error_file": "./logs/kafka-worker-out.log",
+      "merge_logs": true
+    }
+  ]
+}

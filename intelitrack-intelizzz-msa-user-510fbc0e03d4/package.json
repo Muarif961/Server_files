@@ -1,0 +1,31 @@
+{
+  "name": "intelizzz-microservice-users",
+  "version": "0.0.1",
+  "description": "Users Intelizzz Microservice",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/server",
+    "test": "jest --watchAll"
+  },
+  "author": "Anthony Williams",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/boom": "^7.4.2",
+    "@koa/cors": "^3.0.0",
+    "bcrypt": "^3.0.6",
+    "chalk": "^2.4.2",
+    "crypto-random-string": "^3.0.1",
+    "dotenv": "^8.0.0",
+    "kafka-node": "^5.0.0",
+    "koa": "^2.0.0-alpha.8",
+    "koa-bodyparser": "^4.2.1",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "mongoose": "^5.6.3",
+    "nodemailer": "^6.3.1"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "supertest": "^4.0.2"
+  }
+}

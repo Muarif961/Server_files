@@ -1,0 +1,23 @@
+stages:
+- name: Build
+  steps:
+  - runScriptConfig:
+      image: node:16
+      shellScript: npm i
+- name: Publish
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: zzzapi-tracking-service-001:${CICD_EXECUTION_SEQUENCE}
+- name: Deploy
+  steps:
+  - applyYamlConfig:
+      path: ./deployment.yaml
+    env:
+      MONGO_DB: tracking?replicaSet=rs0
+      MONGO_HOST: mongodb-tracking-replicaset-mongodb-replicaset.mongodb-replicaset.svc.cluster.local
+      MONGO_PORT: "27017"
+      PORT: "80"
+timeout: 60
+notification: {}

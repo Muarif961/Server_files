@@ -1,0 +1,36 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: zzzapi-wake-history-service
+spec:
+  selector:
+    app: zzzapi-wake-history
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: zzzapi-wake-history-deployment
+  labels:
+    app: zzzapi-wake-history
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: zzzapi-wake-history
+  template:
+    metadata:
+      labels:
+        app: zzzapi-wake-history
+    spec:
+      imagePullSecrets:
+        - name: pipeline-docker-registry
+      containers:
+        - name: zzzapi-wake-history
+          image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
+          ports:
+            - containerPort: 80

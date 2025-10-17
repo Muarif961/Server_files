@@ -1,0 +1,10 @@
+.DS_Store
+node_modules/
+npm-debug.log
+.idea
+build
+dist
+uploads/
+.env
+/src/utils/testIntegrations.js
+yarn.lock

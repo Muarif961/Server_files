@@ -1,0 +1,30 @@
+{
+  "apps": [
+    {
+      "name": "intelizzz-api-reporting",
+      "script": "src/server/index.js",
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      },
+      "error_file": "./logs/out.log",
+      "out_file": "./logs/out.log",
+      "merge_logs": true
+    },
+    {
+      "name": "intelizzz-api-reporting-worker",
+      "script": "src/workers/reporting-consumer.js",
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      },
+      "error_file": "./logs/kafka-reporting-worker-out.log",
+      "out_file": "./logs/kafka-reporting-worker-out.log",
+      "merge_logs": true
+    }
+  ]
+}

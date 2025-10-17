@@ -1,0 +1,36 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: zzzapi-users-service
+spec:
+  selector:
+    app: zzzapi-users
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: zzzapi-users-deployment
+  labels:
+    app: zzzapi-users
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: zzzapi-users
+  template:
+    metadata:
+      labels:
+        app: zzzapi-users
+    spec:
+      imagePullSecrets:
+        - name: pipeline-docker-registry
+      containers:
+        - name: zzzapi-users
+          image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
+          ports:
+            - containerPort: 80
